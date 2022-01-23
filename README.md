@@ -16,3 +16,9 @@ services:
         container_name: LibreLingo
         image: cutthroat78/librelingo
 ```
+
+To-Do:
+
+- [ ] Add labels to dockerfile
+- [ ] Add expose to dockerfile
+- [ ] figure out way to have it take in course and automatically put them into librelingo
