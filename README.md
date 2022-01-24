@@ -25,3 +25,4 @@ To-Do:
 - [ ] figure out way to have it take in course and automatically put them into librelingo
 - [ ] Change image cutthroat78/librelingo-dev
 - [ ] Fix link above and above docker cli command after changing to cutthroat78/librelingo-dev
+- [ ] Added comments in dockerfile so I know what each part/command does
