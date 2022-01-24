@@ -6,7 +6,7 @@ A (unofficial) Dockerfile and container to run LibreLingo dev
 ## Usage
 ### docker cli
 ```
-docker container run -p 3000:3000 --name LibreLingo-Dev cutthroat78/librelingo
+docker container run -p 3000:3000 --name -d LibreLingo-Dev cutthroat78/librelingo
 ```
 ### docker-compose
 ```
