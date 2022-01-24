@@ -1,5 +1,5 @@
 # Librelingo Dev Docker Container
-A (unofficial) Dockerfile and container to run LibreLingo dev
+A (unofficial) Dockerfile and container to run LibreLingo dev on your system and/or to test out courses
 
 [Docker Hub](https://hub.docker.com/r/cutthroat78/librelingo)
 
