@@ -4,7 +4,8 @@ A (unofficial) Dockerfile and container to run LibreLingo dev on your system and
 [Docker Hub](https://hub.docker.com/r/cutthroat78/librelingo-dev)
 
 ## Usage
-After using one of the methods below and it runs successfully, you can access LibreLingo at http://(ip of host that is running the container):3000
+After using one of the methods below and it runs successfully, you can access LibreLingo at http://(ip of host that is running the container):3000.
+
 If you have volumed mounted your own course (to /LibreLingo/courses/your-course inside of the container), you can access it here http://(ip of host that is running the container):3000/course/your-course
 ### docker cli
 ```
