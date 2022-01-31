@@ -31,3 +31,4 @@ To-Do:
 - [x] Change image cutthroat78/librelingo-dev
 - [x] Fix link above and above docker cli command after changing to cutthroat78/librelingo-dev
 - [x] Added comments in dockerfile so I know what each part/command does
+- [ ] Add how to build and use image (not using docker hub)
