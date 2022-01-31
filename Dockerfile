@@ -19,16 +19,20 @@ RUN wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tar.xz && \
   pip3 install --upgrade pip && \
   pip install pipx && \
   pipx install poetry && \
-  export PATH=$PATH:$HOME/.poetry/bin && \
+  export PATH=$PATH:/root/.local/bin && \
   poetry install && \
-  cd apps/librelingo_yaml_loader && \
+  cd /LibreLingo/apps/librelingo_yaml_loader && \
   poetry install && \
   cd /LibreLingo/apps/librelingo_json_export && \
   poetry install && \
   pip install librelingo-yaml-loader && \
   pip install librelingo-json-export
 
+# Entrypoint script that will convert the course at /LibreLingo/courses/your-course from YAML to JSON and make it available in Librelingo Web App copy and chmod
+COPY start.sh /LibreLingo/start.sh
+RUN chmod +x /LibreLingo/start.sh
+
 EXPOSE 3000
 
-# Entrypoint will convert the course at /LibreLingo/courses/your-course from YAML to JSON and make it available in Librelingo Web App
-ENTRYPOINT ["python3", "cli.py", "/LibreLingo/courses/your-course", "/LibreLingo/apps/web/src/courses/your-course", ";", "yarn", "web", "dev"]
+# Run entrypoint script
+ENTRYPOINT ["./start.sh"]
