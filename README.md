@@ -1,4 +1,5 @@
-# Librelingo Dev Docker Container
+# This repo is deprecated in favour of the docker folder in the official Librelingo repo (Link Below)
+# https://github.com/LibreLingo/LibreLingo/tree/main/apps/docker
 A (unofficial) Dockerfile and container to run LibreLingo dev on your system and/or to test out courses
 
 [Docker Hub](https://hub.docker.com/r/cutthroat78/librelingo-dev)
